@@ -1,5 +1,5 @@
 {
-  "name": "pi-code-bundle",
+  "name": "@kabaevroman/pi-code-bundle",
   "version": "0.5.0",
   "type": "module",
   "description": "Complete pi-code extension suite with one shared runtime",
@@ -15,17 +15,17 @@
     ]
   },
   "dependencies": {
-    "pi-code-context": "0.5.0",
-    "pi-code-file-tools": "0.5.0",
-    "pi-code-hooks": "0.5.0",
-    "pi-code-integrations": "0.5.0",
-    "pi-code-mem": "0.5.0",
-    "pi-code-permissions": "0.5.0",
-    "pi-code-planning": "0.5.0",
-    "pi-code-prompts-skills": "0.5.0",
-    "pi-code-session-ui": "0.5.0",
-    "pi-code-subagents": "0.5.0",
-    "pi-code-tasks": "0.5.0"
+    "@kabaevroman/pi-code-context": "0.5.0",
+    "@kabaevroman/pi-code-file-tools": "0.5.0",
+    "@kabaevroman/pi-code-hooks": "0.5.0",
+    "@kabaevroman/pi-code-integrations": "0.5.0",
+    "@kabaevroman/pi-code-mem": "0.5.0",
+    "@kabaevroman/pi-code-permissions": "0.5.0",
+    "@kabaevroman/pi-code-planning": "0.5.0",
+    "@kabaevroman/pi-code-prompts-skills": "0.5.0",
+    "@kabaevroman/pi-code-session-ui": "0.5.0",
+    "@kabaevroman/pi-code-subagents": "0.5.0",
+    "@kabaevroman/pi-code-tasks": "0.5.0"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "1.5.2",
@@ -40,8 +40,7 @@
     "typecheck": "tsc --noEmit"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
