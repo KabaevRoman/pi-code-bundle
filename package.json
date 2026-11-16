@@ -1,6 +1,6 @@
 {
-  "name": "@kabaevroman/pi-code-bundle",
-  "version": "0.6.5",
+  "name": "@pi-ko/bundle",
+  "version": "0.7.0",
   "type": "module",
   "description": "Complete pi-code extension suite with one shared runtime",
   "keywords": [
@@ -15,34 +15,35 @@
     ]
   },
   "dependencies": {
-    "@kabaevroman/pi-code-core": "0.6.5",
-    "@kabaevroman/pi-code-context": "0.5.2",
-    "@kabaevroman/pi-code-file-tools": "0.5.2",
-    "@kabaevroman/pi-code-hooks": "0.5.1",
-    "@kabaevroman/pi-code-integrations": "0.5.2",
-    "@kabaevroman/pi-code-mem": "0.5.2",
-    "@kabaevroman/pi-code-permissions": "0.6.5",
-    "@kabaevroman/pi-code-planning": "0.6.3",
-    "@kabaevroman/pi-code-prompts-skills": "0.5.2",
-    "@kabaevroman/pi-code-session-ui": "0.6.2",
-    "@kabaevroman/pi-code-subagents": "0.6.2",
-    "@kabaevroman/pi-code-tasks": "0.6.4"
+    "@pi-ko/context": "0.5.3",
+    "@pi-ko/core": "0.6.6",
+    "@pi-ko/file-tools": "0.5.3",
+    "@pi-ko/hooks": "0.5.2",
+    "@pi-ko/integrations": "0.5.3",
+    "@pi-ko/mem": "0.5.3",
+    "@pi-ko/permissions": "0.6.6",
+    "@pi-ko/planning": "0.6.4",
+    "@pi-ko/prompts-skills": "0.5.3",
+    "@pi-ko/session-ui": "0.6.3",
+    "@pi-ko/subagents": "0.6.3",
+    "@pi-ko/tasks": "0.6.5"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "1.5.2",
     "typebox": "1.3.27"
   },
   "devDependencies": {
-    "typescript": "5.9.3",
     "@types/node": "22.19.19",
-    "tsx": "4.23.15"
+    "tsx": "4.23.15",
+    "typescript": "5.9.3"
   },
   "scripts": {
     "test": "node --import tsx --test tests/*.test.ts",
     "typecheck": "tsc --noEmit"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "repository": {
     "type": "git",

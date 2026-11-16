@@ -2,8 +2,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import type { ExtensionAPI } from '@earendil-works/pi-coding-agent';
 import install from '../index.ts';
-import hooks from '@kabaevroman/pi-code-hooks/index.ts';
-import integrations from '@kabaevroman/pi-code-integrations/index.ts';
+import hooks from '@pi-ko/hooks/index.ts';
+import integrations from '@pi-ko/integrations/index.ts';
 
 function api() {
   const listeners = new Map<string, Set<(value: any) => void>>();
