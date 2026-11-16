@@ -1,4 +1,5 @@
 import type { ExtensionAPI } from '@earendil-works/pi-coding-agent';
+import { shared } from '@kabaevroman/pi-code-core';
 import context from '@kabaevroman/pi-code-context/index.ts';
 import files from '@kabaevroman/pi-code-file-tools/index.ts';
 import hooks from '@kabaevroman/pi-code-hooks/index.ts';
@@ -13,6 +14,7 @@ import tasks from '@kabaevroman/pi-code-tasks/index.ts';
 
 /** Activate the complete extension suite through the shared core runtime. */
 export default function(pi: ExtensionAPI): void {
+  shared(pi);
   context(pi);
   files(pi);
   hooks(pi);
