@@ -39,7 +39,7 @@ for (const individualFirst of [false, true]) {
     for (const name of ['Read', 'Edit', 'TaskCreate', 'EnterPlanMode']) assert.ok(h.tools.has(name), name);
     for (const name of ['compat', 'cc-prompt', 'cc-integrations']) assert.ok(h.commands.has(name), name);
     let state: any;
-    h.pi.events.emit('pi-claude-compat:runtime:v2', { accept(value: any) { state = value; } });
+    h.pi.events.emit('pi-code-compat:runtime:v2', { accept(value: any) { state = value; } });
     assert.equal(state.features.size, 12);
     const results = await Promise.all((h.handlers.get('before_agent_start') ?? []).map(fn => fn({
       systemPromptOptions: { contextFiles: [], skills: [], appendSystemPrompt: '', sections: {}, promptGuidelines: [], toolGuidelines: {} },
