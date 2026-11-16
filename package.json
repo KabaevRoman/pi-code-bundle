@@ -19,7 +19,7 @@
     "pi-code-file-tools": "0.5.0",
     "pi-code-hooks": "0.5.0",
     "pi-code-integrations": "0.5.0",
-    "pi-code-project-memory": "0.5.0",
+    "pi-code-mem": "0.5.0",
     "pi-code-permissions": "0.5.0",
     "pi-code-planning": "0.5.0",
     "pi-code-prompts-skills": "0.5.0",

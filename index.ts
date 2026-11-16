@@ -3,7 +3,7 @@ import context from 'pi-code-context/index.ts';
 import files from 'pi-code-file-tools/index.ts';
 import hooks from 'pi-code-hooks/index.ts';
 import integrations from 'pi-code-integrations/index.ts';
-import memory from 'pi-code-project-memory/index.ts';
+import memory from 'pi-code-mem/index.ts';
 import permissions from 'pi-code-permissions/index.ts';
 import planning from 'pi-code-planning/index.ts';
 import prompts from 'pi-code-prompts-skills/index.ts';
