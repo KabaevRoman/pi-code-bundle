@@ -8,7 +8,7 @@ Install with:
 pi install npm:@kabaevroman/pi-code-bundle
 ```
 
-Individual extensions remain independently installable. Installing the bundle alongside individual extensions does not register a feature twice. All dependencies are pinned to version `0.5.0` and share `@kabaevroman/pi-code-core`.
+Individual extensions remain independently installable. Installing the bundle alongside individual extensions does not register a feature twice. Dependencies are pinned to their latest release tags and share `@kabaevroman/pi-code-core`.
 
 Publish in this order: `@kabaevroman/pi-code-core`, the individual extension packages, then `@kabaevroman/pi-code-bundle`.
 
@@ -23,8 +23,8 @@ publishing secret is needed. Enable GitHub Actions in this repository.
 Update `package.json` to the release version, commit it, then push a matching tag:
 
 ```sh
-git tag v0.5.0
-git push origin v0.5.0
+git tag v0.6.1
+git push origin v0.6.1
 ```
 
 Tags must equal the package version, optionally prefixed with `v`. The workflow
